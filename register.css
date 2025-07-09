@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(#2e1f9f, #111014);
+  /* background: linear-gradient(#592fe1 25%, #231d53 75%, #02010c 100%); */
+}
+.sign-up-nav {
+  color: #ccc;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.container {
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 2px 35px 10px 35px;
+  border-radius: 5px;
+  /* box-shadow: 0 10px 10px rgba(20, 3, 3, 0.15); */
+}
+.container form .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+.container form .title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 35px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 5px;
+}
+.container form .input-box {
+  width: 100%;
+  height: 25px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box button {
+  height: 30px;
+}
+.container form .input-box input,
+button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 10px;
+  border: none;
+}
+.container form .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.container form .underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.container form .input-box input,
+button:focus ~ .underline:after .container form .input-box input,
+button:valid ~ .underline:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container form .input-box button {
+  background: linear-gradient(to right, #ff0080 0%, #99004d 100%);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.container form .input-box a {
+  text-decoration: none;
+  color: #fff;
+}
+.container form .input-box button:hover {
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  transform: scale(1.1);
+}
+.container form .button {
+  margin: 40px 0 20px 0;
+}
+
+.acc a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(202, 155, 235);
+}
+.acc a:hover {
+  text-decoration: underline;
+}

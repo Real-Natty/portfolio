@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security</title>
+  </head>
+  <body>
+    <div id="back"></div>
+    <header>
+      <nav>
+        <a href="register.html">Sign up</a>
+        <a href="login.html">Login</a>
+        <a href="footer.html">Home</a>
+        <a href="message.html">Contact us</a>
+        <a href="about.html">About us</a>
+        <a href="blog.html">Blogs</a>
+        <a href="faq.html">FAQ</a>
+        <a href="links.html">Link</a>
+        <a href="security.html">Security and Privacy</a>
+        <a href="table.html">Table</a>
+      </nav>
+
+      <h2>Security and Privacy</h2>
+    </header>
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#personal-details">Personal Details</a></li>
+          <li><a href="#password">Password</a></li>
+          <li>
+            <a href="#two-factor-authentication">Two factor Authentication</a>
+          </li>
+          <li><a href="#face-id">Face ID</a></li>
+          <li><a href="#devices">Devices</a></li>
+          <li><a href="#network-preferences">Network preference</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <p><b> Complete setting up your profile &downarrow; </b></p>
+      <section id="personal-details">
+        <h3>Personal Details</h3>
+
+        <form action="">
+          <div>
+            <label for="first-name">First name:</label>
+            <input
+              type="text"
+              placeholder="Enter first name"
+              id="first-name"
+              value="Emmanuel"
+              disabled
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="last-name">last name:</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter last name"
+              value="Okon"
+              disabled
+            />
+          </div>
+          <br />
+          <div>
+            <label for="age">D.O.B:</label>
+            <input type="date" id="age" />
+          </div>
+          <br />
+          <div>
+            <label for="origin">State of Origin:</label>
+            <input
+              type="text"
+              name="origin"
+              id="origin"
+              placeholder=""
+              value="AkwaIbom"
+              disabled
+            />
+          </div>
+          <br />
+          <div>
+            <label for="phone-number">Phone number:</label>
+            <input
+              type="text"
+              id="phone-number"
+              name="phone-number"
+              placeholder=""
+              value="+2342139478293"
+              disabled
+            />
+          </div>
+          <br />
+          <div>
+            <label for="phone-number2">Add Phone number:</label>
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number2"
+              placeholder="Add phone number"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=""
+              value="tobijoseph@gmail.com"
+              disabled
+            />
+          </div>
+        </form>
+
+        <br />
+        <br />
+        <a href="update.html">Update profile</a>
+      </section>
+      <br />
+      <br />
+      <section id="password">
+        <header>
+          <h3>Password manager</h3>
+        </header>
+        <label for="changepassword">Change password :</label>
+        <a href="password.html">Enter </a>
+
+        <br />
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th>Who can view your profile</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Everyone : <input type="checkbox" name="frnd" id="frnd" />
+              </td>
+            </tr>
+            <tr>
+              <td>Friends :<input type="checkbox" name="evn" id="evn" /></td>
+            </tr>
+            <tr>
+              <td>only me :<input type="checkbox" name="onm" id="onm" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Who can view your orders</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Everyone : <input type="checkbox" name="frnd" id="frnd" />
+              </td>
+            </tr>
+            <tr>
+              <td>Friends :<input type="checkbox" name="evn" id="evn" /></td>
+            </tr>
+            <tr>
+              <td>only me :<input type="checkbox" name="onm" id="onm" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <a href="#back">Back</a>
+      </section>
+      <br />
+      <br />
+
+      <section id="two-factor-authentication">
+        <h3>Two factor Authentication</h3>
+        <p><small>setup your two factor authentication</small></p>
+        <label for="choose"> Choose mode of authentication :</label>
+        <select name="choose" id="choose">
+          <option value="" disabled selected hidden>Enter autnenticator</option>
+          <option value="number">phone Number</option>
+          <option value="email">E-mail</option>
+        </select>
+        <br />
+        <a href="#Password">Back</a>
+      </section>
+      <br />
+      <br />
+      <section id="face-id">
+        <h3>Face ID</h3>
+        <p>
+          <small
+            >opps!!! face id is currently not available for your region</small
+          >
+        </p>
+        <a href="#Two factor Authentication">Back</a>
+      </section>
+      <br />
+      <br />
+      <section id="devices">
+        <h3>Devices</h3>
+        <em>devices where you logged in</em>
+        <p>ITEL P702: &CircleDot;</p>
+        <p>IOS 15 pro: &CircleDot;</p>
+        <a href="#Face ID">Back</a>
+      </section>
+      <br />
+      <br />
+      <section id="network-preference">
+        <h3>Network preference</h3>
+        <ul>
+          <li>
+            Glo
+            <ul>
+              <li>Glo flat</li>
+              <li>Glo mms</li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Airtel
+            <ul>
+              <li>Airtel-secure</li>
+              <li>Airtel mms</li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            MTN
+            <ul>
+              <li>MTN flat</li>
+              <li>MTN-secure</li>
+              <li>MTN mms</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <a href="#Devices">Back</a>
+      <br />
+    </main>
+    <footer>
+      <a href="#back">Back to top</a>
+      <br />
+      <a href="index.html">Home</a>
+    </footer>
+  </body>
+</html>
